@@ -10,4 +10,7 @@
 
 @interface PageCache : NSObject
 
+@property (nonatomic, strong) NSArray *pageChacheArray;
+
++ (PageCache*)defaultPageCache;
 @end

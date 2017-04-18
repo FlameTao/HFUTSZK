@@ -10,4 +10,6 @@
 
 @interface AboutView : UIView
 
+@property (nonatomic, strong) UITableView *aboutTableView;
+
 @end

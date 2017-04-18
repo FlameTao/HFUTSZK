@@ -10,4 +10,10 @@
 
 @interface SelectCourseVC : UIViewController
 
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) UISwipeGestureRecognizer *rightForRet;
+
++ (SelectCourseVC*)selectWrongCourse;
++ (SelectCourseVC*)selectCollectionCourse;
+
 @end

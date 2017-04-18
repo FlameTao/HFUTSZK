@@ -10,4 +10,7 @@
 
 @interface PersonalTableViewCell : UITableViewCell
 
+@property (nonatomic, strong) UIImageView *cellMark;
+@property (nonatomic, strong) UILabel *cellTitle;
+
 @end

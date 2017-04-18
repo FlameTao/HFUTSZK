@@ -10,4 +10,14 @@
 
 @interface Option : UIView
 
++ (Option*) optionWithOption:(NSString*)option Order:(NSString*)order;
+
+@property (nonatomic, strong) UIImageView *optionMark;
+@property (nonatomic, strong) UILabel *option;
+@property (nonatomic) BOOL selected;
+
+@property (nonatomic, strong) UITapGestureRecognizer *tapForCheck;
+
+
+
 @end

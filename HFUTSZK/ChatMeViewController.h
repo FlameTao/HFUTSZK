@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChatMeView.h"
 
 @interface ChatMeViewController : UIViewController
+
+@property (nonatomic, strong) ChatMeView *chatmeView;
 
 @end

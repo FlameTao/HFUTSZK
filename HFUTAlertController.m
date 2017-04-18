@@ -112,6 +112,7 @@
     _cancelButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 0);
     _cancelButton.titleLabel.font = [UIFont systemFontOfSize:18];
     [_cancelButton setTitle:@"取消" forState:UIControlStateNormal];
+    [_cancelButton addTarget:self action:@selector(cancelButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_cancelButton];
     _cancelButton.translatesAutoresizingMaskIntoConstraints = NO;
     [_cancelButton mas_makeConstraints:^(MASConstraintMaker *make) {

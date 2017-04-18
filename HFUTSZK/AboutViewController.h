@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AboutView.h"
 
 @interface AboutViewController : UIViewController
+
+@property (nonatomic, strong) AboutView *aboutView;
 
 @end

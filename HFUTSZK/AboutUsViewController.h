@@ -10,4 +10,13 @@
 
 @interface AboutUsViewController : UIViewController
 
+
+@property (nonatomic, strong) UILabel *content;
+@property (nonatomic, strong) UIScrollView *scrollView;
+
+
+@property (nonatomic, strong) UILabel *hfutstudio;
+@property (nonatomic, strong) UILabel *hfutcopyright;
+
+
 @end

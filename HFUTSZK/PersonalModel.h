@@ -1,5 +1,5 @@
 //
-//  PersonalModal.h
+//  PersonalModel.h
 //  HFUTSZK
 //
 //  Created by Flame on 2017/3/12.

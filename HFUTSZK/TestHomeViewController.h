@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestHomeView.h"
 
 @interface TestHomeViewController : UIViewController
+
+@property (nonatomic, strong) TestHomeView *testHomeView;
 
 @end

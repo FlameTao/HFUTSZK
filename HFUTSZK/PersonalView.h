@@ -10,4 +10,10 @@
 
 @interface PersonalView : UIView
 
+@property (nonatomic, strong) UITableView *personalTableView;
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UIImageView *badge;
+
+
+
 @end

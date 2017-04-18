@@ -10,4 +10,8 @@
 
 @interface ChatMeView : UIView
 
+@property (nonatomic, strong) UITableView *chatMeTableView;
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UILabel *foreword;
+
 @end

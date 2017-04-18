@@ -10,6 +10,16 @@
 
 @implementation AboutView
 
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self != nil) {
+        self.backgroundColor = [UIColor whiteColor];
+        _aboutTableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStyleGrouped];
+        [self addSubview:_aboutTableView];
+    }
+    return self;
+}
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

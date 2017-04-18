@@ -10,4 +10,13 @@
 
 @interface HomeView : UIView
 
+@property (nonatomic, strong) UITableView *homeTabview;
+@property (nonatomic, strong) UIView *headerView;
+@property (nonatomic, strong) UIImageView *badge;
+
+
+
+- (instancetype)initWithFrame:(CGRect)frame;
+
+
 @end

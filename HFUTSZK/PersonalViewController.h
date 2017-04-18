@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PersonalView.h"
+#import "PersonalModel.h"
 
-@interface PersonalViewController : UIViewController
+@interface PersonalViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) PersonalView *personalView;
+@property (nonatomic, strong) PersonalModal *personalModel;
 
 @end

@@ -10,4 +10,8 @@
 
 @interface FanPicture : UIView
 
+- (id)initWithFrame:(CGRect)frame dataItems:(NSArray *)dataItems colorItems:(NSArray *)colorItems;
+
+- (void)stroke;
+
 @end

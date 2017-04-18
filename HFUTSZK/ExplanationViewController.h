@@ -10,4 +10,7 @@
 
 @interface ExplanationViewController : UIViewController
 
+@property (nonatomic, strong) UILabel *content;
+@property (nonatomic, strong) UIScrollView *scrollView;
+
 @end

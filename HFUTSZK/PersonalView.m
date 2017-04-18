@@ -7,6 +7,7 @@
 //
 
 #import "PersonalView.h"
+#import "Masonry.h"
 
 @implementation PersonalView
 
@@ -17,5 +18,30 @@
     // Drawing code
 }
 */
+
+- (instancetype) initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self != nil) {
+        self.backgroundColor = [UIColor whiteColor];
+        _personalTableView = [[UITableView alloc] initWithFrame:frame style:UITableViewStyleGrouped];
+        [self initHeaderView];
+        _personalTableView.tableHeaderView = _headerView;
+        [self addSubview:_personalTableView];
+        
+    }
+    return self;
+}
+
+
+- (void) initHeaderView {
+    _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 200)];
+    _headerView.backgroundColor = [UIColor whiteColor];
+    _badge = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"school"]];
+    _badge.translatesAutoresizingMaskIntoConstraints = NO;
+    [_headerView addSubview:_badge];
+    [_badge mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(_headerView);
+    }];
+}
 
 @end
